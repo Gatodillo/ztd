@@ -468,6 +468,7 @@ public class Map {
 			addr.equalsIgnoreCase("San Francisco") ||
 			addr.equalsIgnoreCase("Philadelphia Museum of Art") ||
 			addr.equalsIgnoreCase("London") ||
+      addr.equalsIgnoreCase("map") ||
 			addr.equalsIgnoreCase("Amsterdam");
 	}
 	
@@ -492,6 +493,9 @@ public class Map {
 		}
 		if (word1.equals("London")) {
 			setWLondon();
+		}
+    if (word1.equals("Tepic MIC")) {
+			setWTepicMIC();
 		}
 		if (word1.equals("Amsterdam")) {
 			setWAmsterdam();
@@ -547,6 +551,13 @@ public class Map {
 		wMax[1] = 51.50997386481776;
 	}
 	
+  	public void setWTepicMIC() {
+		wMin[0] = -104.85751;
+		wMin[1] = 21.47734;
+		wMax[0] = -104.84066;
+		wMax[1] = 21.48604;
+	}
+
 	public void setWAmsterdam() {
 		wMin[0] = 4.8956925620078575;
 		wMin[1] = 52.36831083518224;

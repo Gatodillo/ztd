@@ -55,7 +55,7 @@ public class MainMenu {
 			_cbs.add(new ControlButton("Eiffel Tower", 3*_w/2, _h/5 + 5*c, g));
 			_cbs.add(new ControlButton("San Francisco", 3*_w/2, _h/5 + 6*c, g));
 			_cbs.add(new ControlButton("Philadelphia Museum of Art", 3*_w/2, _h/5 + 7*c, g));
-			_cbs.add(new ControlButton("London", 3*_w/2, _h/5 + 8*c, g));
+      _cbs.add(new ControlButton("Tepic MIC", 3*_w/2, _h/5 + 8*c, g));
 			_cbs.add(new ControlButton("Amsterdam", 3*_w/2, _h/5 + 9*c, g));
 			_first = false;
 		}
