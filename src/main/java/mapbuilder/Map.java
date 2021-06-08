@@ -554,18 +554,17 @@ public class Map {
 	}
 	
 	public void setWLondon() {
-		wMin[0] = -0.13199437017418134;
-		wMin[1] = 51.50457793518225;
-		wMax[0] = -0.12332502982581865;
-		wMax[1] = 51.50997386481776;
-    System.out.println("Hola!!!!");
+		wMin[0] = -0.13199437017418134;   //Oeste
+		wMin[1] = 51.50457793518225;      //Sur
+		wMax[0] = -0.12332502982581865;   //Este
+		wMax[1] = 51.50997386481776;      //Norte
 	}
 	
   	public void setWTepicMIC() {
-		wMin[0] = -104.85284;
-		wMin[1] = 21.47862;
-		wMax[0] = -104.84442;
-		wMax[1] = 21.48297;
+		wMin[0] = -104.89485;
+		wMin[1] = 21.50955;
+		wMax[0] = -104.88643;
+		wMax[1] = 21.51389;
     System.out.println("Tepic!!!!");
 	}
 
@@ -574,7 +573,6 @@ public class Map {
 		wMin[1] = 52.36831083518224;
 		wMax[0] = 4.904530437992143;
 		wMax[1] = 52.373706764817754;
-    System.out.println("Hola!!!!");
 	}
 	
 	
