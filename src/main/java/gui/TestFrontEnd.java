@@ -350,6 +350,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 	public void makeMap(String add) {
 		_ref = new Referee(_m, this);
 		_m = new Map(add, _ref, this);
+    System.out.println(_m);
 		if (!_hasDataError) {
 			if (_m.getBaseNode() == null) {
 				dataError(2);
@@ -437,6 +438,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 		if(!_loading.get()) {
 			if (_hasMain) {
 				String add = _mm.contains(e.getX(), e.getY(), true);
+        System.out.println(add);
 				if (add != null) {
 					_loading.set(true);
 					_lScreen = new LoadingScreen(_size.x, _size.y, _ref);
@@ -728,7 +730,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 	}
 	
 	public static void main(String[] args) {
-		new TestFrontEnd("ZTD", false, new Vec2i(DEFAULT_WINDOW_SIZE.x, DEFAULT_WINDOW_SIZE.y));
+		new TestFrontEnd("Zombies", false, new Vec2i(DEFAULT_WINDOW_SIZE.x, DEFAULT_WINDOW_SIZE.y));
 	}
 	
 	

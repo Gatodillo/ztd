@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.concurrent.TimeoutException;
 
+import javax.sound.sampled.SourceDataLine;
+
 import gui.TestFrontEnd;
 
 import cs195n.Vec2f;
@@ -61,6 +63,9 @@ public class Map {
 		wMax = new double[2];
 
     XmlParser x = new XmlParser(this);
+
+    System.out.println("MAP: " + address);
+    
     try (InputStream box = getBoxInputStream(address, x)){
 			if ((box == null) && (!_sentDataError)) {
 				_tf.dataError(1);
@@ -72,6 +77,7 @@ public class Map {
 				_sentDataError = true;
 				return;
 			}
+      System.out.println("BOX" + box);
 			_ways = x.getWays();
 			_nodes = x.getNodes();
 			_highways = x.getHighs();
@@ -108,10 +114,12 @@ public class Map {
 	private InputStream getBoxInputStream(String address, XmlParser x) throws TimeoutException {
 		if (isStored(address)) {
 			String formatted = address.replace(" ", "_");
+      System.out.println("formatted"  + formatted);
 			try {
 				FileInputStream inputStream =
 								new FileInputStream(new File("src/main/resources/maps/" + formatted + ".xml"));
-				setW(address);
+				System.out.println("boxInputStream"  + address);
+        setW(address);
 				return inputStream;
 			} catch (FileNotFoundException e) {
 				throw new IllegalStateException("Cannot find stored file", e);
@@ -468,11 +476,12 @@ public class Map {
 			addr.equalsIgnoreCase("San Francisco") ||
 			addr.equalsIgnoreCase("Philadelphia Museum of Art") ||
 			addr.equalsIgnoreCase("London") ||
-      addr.equalsIgnoreCase("map") ||
+      addr.equalsIgnoreCase("Tepic MIC") ||
 			addr.equalsIgnoreCase("Amsterdam");
 	}
 	
 	public void setW(String word1) {
+    System.out.println(word1);
 		if (word1.equals("Brown University")) {
 			setWBrown();
 		}
@@ -549,13 +558,15 @@ public class Map {
 		wMin[1] = 51.50457793518225;
 		wMax[0] = -0.12332502982581865;
 		wMax[1] = 51.50997386481776;
+    System.out.println("Hola!!!!");
 	}
 	
   	public void setWTepicMIC() {
-		wMin[0] = -104.85751;
-		wMin[1] = 21.47734;
-		wMax[0] = -104.84066;
-		wMax[1] = 21.48604;
+		wMin[0] = -104.85284;
+		wMin[1] = 21.47862;
+		wMax[0] = -104.84442;
+		wMax[1] = 21.48297;
+    System.out.println("Tepic!!!!");
 	}
 
 	public void setWAmsterdam() {
@@ -563,6 +574,7 @@ public class Map {
 		wMin[1] = 52.36831083518224;
 		wMax[0] = 4.904530437992143;
 		wMax[1] = 52.373706764817754;
+    System.out.println("Hola!!!!");
 	}
 	
 	
