@@ -570,8 +570,8 @@ public class TestFrontEnd extends SwingFrontEnd {
 			_candidate = null;
 			return true;
 		}
-		else if (_command.equals("Pause")) {
-			_screen = new Screen("Pause", _size.x, _size.y, _ref);
+		else if (_command.equals("Pausa")) {
+			_screen = new Screen("Pausa", _size.x, _size.y, _ref);
 			_hasMap = false;
 			_showMap = true;
 			_hasScreen = true;
