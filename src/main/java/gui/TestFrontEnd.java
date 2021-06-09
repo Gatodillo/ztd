@@ -36,7 +36,7 @@ import cs195n.Vec2i;
 
 public class TestFrontEnd extends SwingFrontEnd {
 	
-	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(980, 800);
+	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(1920, 1080);
 	
 	private List<Line2D> _highline2D;
 	private List<Line2D> _zombieline2D;
