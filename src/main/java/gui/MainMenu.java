@@ -46,7 +46,7 @@ public class MainMenu {
 		this.g = g;
 		if (_first) {
 			int c = 30;
-			_go = new ControlButton("GO", _w/2, _h/5 + 3*c, g);
+			_go = new ControlButton("JUGAR", _w/2, _h/5 + 3*c, g);
 			_addline1 = new EditableTextBox(_etbwidth, _w/2, _h/5 + c, _line1);
 			_addline2 = new EditableTextBox(_etbwidth, _w/2, _h/5 + 2*c, _line2);
 			_cbs.add(new ControlButton("Brown University", 3*_w/2, _h/5 + 2*c, g));
