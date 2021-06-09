@@ -109,7 +109,7 @@ public class MainMenu {
 		int f = 16;
 		int s = 30;
 		g.setFont(new Font("Helvetica", Font.BOLD, 13));
-		g.setColor(Color.BLACK);
+		g.setColor(Color.DARK_GRAY);
 		new CenText("Tutorial", _w, r + f);
 		new CenText("Zombie Tower Defense is a tower defense game based on real world maps. By typing in an address or by selecting", _w, r + 2*f);
 		new CenText("a location at right you can generate a map of your choosing to play the game on. The object of the game is prevent", _w, r + 3*f);
