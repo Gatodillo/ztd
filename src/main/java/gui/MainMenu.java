@@ -29,7 +29,7 @@ public class MainMenu {
 	private ControlButton _go;
 	private int _etbwidth = 25;
 	private boolean _first;
-	private final Color _background = new Color(119,136,153);
+	private final Color _background = new Color(0,241,189);
 	
 	public MainMenu(int w, int h, String line1, String line2, int toggle) {
 		_w = w;
