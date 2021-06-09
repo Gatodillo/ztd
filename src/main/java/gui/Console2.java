@@ -239,10 +239,10 @@ public class Console2 {
 			int c = 20;
 			g.setFont(new Font("Helvetica", Font.BOLD, 15));
 			g.drawString(_name, centerX(_name, _rightline), y + c);
-			g.drawString("Price: " + _t.getPrice(), x + 2, y + 2*c);
-			g.drawString("Damage: " + _t.getDamage(), x + 2, y + 3*c);
-			g.drawString("Radius: " + (int) Math.sqrt(_t.getRadius()/10000), x + 2, y + 4*c);
-			g.drawString("Delay: " + _t.getDelay() + " secs", x + 2, y + 5*c);
+			g.drawString("Precio: " + _t.getPrice(), x + 2, y + 2*c);
+			g.drawString("Daño: " + _t.getDamage(), x + 2, y + 3*c);
+			g.drawString("Radio: " + (int) Math.sqrt(_t.getRadius()/10000), x + 2, y + 4*c);
+			g.drawString("Retardo: " + _t.getDelay() + " seg", x + 2, y + 5*c);
 			String blurb = _t.getBlurb();
 			FontMetrics fm = g.getFontMetrics();
 			int d = fm.stringWidth(blurb);
