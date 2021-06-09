@@ -81,22 +81,22 @@ public class Screen {
 			g.setColor(Color.BLACK);
 			if (_first) {
 				g.setFont(new Font("Helvetica", Font.PLAIN, 15));
-				_cbs.add(new HugeButton("Continue", _w, _h*2/3, g));
+				_cbs.add(new HugeButton("Continuar", _w, _h*2/3, g));
 				_first = false;
 			}
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("Stats", _w, _h/5);
+			_t = new Text("Estadísticas", _w, _h/5);
 			int d = 30;
 			int f = 70;
 			g.setFont(new Font("Helvetica", Font.PLAIN, 20));
-			g.drawString("Zombies Killed This Round: " + _ref.getRoundZombiesKilled(), _w/3, _h/5 + f + d);
-			g.drawString("Total Zombies Killed: " + _ref.getTotalZombiesKilled(), _w/3, _h/5 + f + 2*d);
-			g.drawString("Interest Earned This Round: " + _ref.getRoundInterestEarned(), _w/3, _h/5 + f + 3*d);
-			g.drawString("Total Interest Earned: " + _ref.getTotalInterestEarned(), _w/3, _h/5 + f + 4*d);
-			g.drawString("Money Earned This Round: " + _ref.getRoundMoneyEarned(), _w/3, _h/5 + f + 5*d);
-			g.drawString("Total Money Earned: " + _ref.getTotalMoneyEarned(), _w/3, _h/5 + f + 6*d);
-			g.drawString("Money Spent This Round: " + _ref.getRoundMoneySpent(), _w/3, _h/5 + f + 7*d);
-			g.drawString("Total Money Spent: " + _ref.getTotalMoneySpent(), _w/3, _h/5 + f + 8*d);
+			g.drawString("Zombies en esta partida: " + _ref.getRoundZombiesKilled(), _w/3, _h/5 + f + d);
+			g.drawString("Total de zombies: " + _ref.getTotalZombiesKilled(), _w/3, _h/5 + f + 2*d);
+			g.drawString("Puntos de esta partida: " + _ref.getRoundInterestEarned(), _w/3, _h/5 + f + 3*d);
+			g.drawString("Total de puntos ganados: " + _ref.getTotalInterestEarned(), _w/3, _h/5 + f + 4*d);
+			g.drawString("Dinero ganado esta partida: " + _ref.getRoundMoneyEarned(), _w/3, _h/5 + f + 5*d);
+			g.drawString("Total de dinero ganado: " + _ref.getTotalMoneyEarned(), _w/3, _h/5 + f + 6*d);
+			g.drawString("Dinero ganado esta partida: " + _ref.getRoundMoneySpent(), _w/3, _h/5 + f + 7*d);
+			g.drawString("Total de dinero ganado: " + _ref.getTotalMoneySpent(), _w/3, _h/5 + f + 8*d);
 
 		}
 		else if (_type.equals("Bad Connection")) {
@@ -107,11 +107,11 @@ public class Screen {
 				_first = false;
 			}
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("Bad Connection", _w, _h/5);
+			_t = new Text("Problema de conexión", _w, _h/5);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 30));
 			int d = 30;
-			String msg1 = "There is a problem with your connection. Please fix the error";
-			String msg2 = "or use one of our pre-loaded locations.";
+			String msg1 = "Hay un problema con la conexión a Internet.";
+			String msg2 = "Por favor usa una de nuestras ubicaciones precargadas.";
 			float x1 = centerX(msg1, _w);
 			float x2 = centerX(msg2, _w);
 			g.drawString(msg1, x1, _h/5 + 100 + d);
@@ -125,12 +125,12 @@ public class Screen {
 				_first = false;
 			}
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("Unsupported Location", _w, _h/5);
+			_t = new Text("Ubicación no soportada", _w, _h/5);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 30));
 			int d = 30;
-			String msg1 = "The selected location is unsupported.";
-			String msg2 = "Please select a new location,";
-			String msg3 = "or use one of our pre-loaded locations.";
+			String msg1 = "La ubicación seleccionada no está soportada.";
+			String msg2 = "Por favor selecciona una nueva,";
+			String msg3 = "o usa unas de nuestras ubicaciones precargadas.";
 			float x1 = centerX(msg1, _w);
 			float x2 = centerX(msg2, _w);
 			float x3 = centerX(msg3, _w);
@@ -146,13 +146,13 @@ public class Screen {
 				_first = false;
 			}
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("Bad Location", _w, _h/5);
+			_t = new Text("Ubicación incorrecta.", _w, _h/5);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 30));
 			int d = 30;
-			String msg1 = "The selected location does not have";
-			String msg2 = "enough information to create a map.";
-			String msg3 = "Please select a new location,";
-			String msg4 = "or use one of our pre-loaded locations.";
+			String msg1 = "La ubicación seleccionada no tiene";
+			String msg2 = "información suficiente para crear el mapa.";
+			String msg3 = "Por favor selecciona una nueva,";
+			String msg4 = "o usa una de nuestras ubicaciones precargadas.";
 			float x1 = centerX(msg1, _w);
 			float x2 = centerX(msg2, _w);
 			float x3 = centerX(msg3, _w);

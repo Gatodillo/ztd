@@ -81,7 +81,7 @@ public class Console2 {
 			g.setFont(new Font("Helvetica", Font.BOLD, 15));
 			_cbs.add(new ControlButton("Iniciar!", _cw, 5*_h/7, g));
 			_cbs.add(new ControlButton("Pausa", _cw, 5*_h/7 + _cboffset, g));
-			_cbs.add(new ControlButton("Main Menu", _cw, 5*_h/7 + 2*_cboffset, g));
+			_cbs.add(new ControlButton("Menú principal", _cw, 5*_h/7 + 2*_cboffset, g));
 			_cbs.add(new ControlButton("Restart", _cw,  5*_h/7 + 3*_cboffset, g));
 			_cbs.add(new ControlButton("Quit", _cw,  5*_h/7 + 4*_cboffset, g));
 			

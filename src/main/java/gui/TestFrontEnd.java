@@ -544,7 +544,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 			_c.noUpgrades();
 			return true;
 		}
-		else if (_command.equals("Main")) {
+		else if (_command.equals("Menú")) {
 			_mm.clear();
 			_hasMain = true;
 			_showMain = true;
