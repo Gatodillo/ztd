@@ -41,7 +41,7 @@ public class Screen {
 		this.g = g;
 		int c = 30;
 		g.setColor(Color.BLACK);
-		if (_type.equals("Pausa")) {
+		if (_type.equals("Pause")) {
 			if (_first) {
 				g.setColor(Color.WHITE);
 				g.setFont(new Font("Helvetica", Font.PLAIN, 15));

@@ -570,14 +570,14 @@ public class TestFrontEnd extends SwingFrontEnd {
 			return true;
 		}
 		else if (_command.equals("Pausa")) {
-			_screen = new Screen("Pausa", _size.x, _size.y, _ref);
+			_screen = new Screen("Pause", _size.x, _size.y, _ref);
 			_hasMap = false;
 			_showMap = true;
 			_hasScreen = true;
 			_wasRunning = _ref.pause();
 			return true;
 		}
-		else if (_command.equals("Continue")) {
+		else if (_command.equals("Continuar")) {
 			_screen = null;
 			_hasMap = true;
 			_showMap = true;
