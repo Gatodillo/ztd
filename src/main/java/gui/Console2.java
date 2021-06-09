@@ -75,8 +75,8 @@ public class Console2 {
 			_cboffset = 30;
 			g.setColor(Color.WHITE);
 			g.setFont(new Font("Helvetica", Font.BOLD, 15));
-			_titleline1 = new Text("Zombie", _cw, _h/8);
-			_titleline2 = new Text("Tower Defense", _cw, _h/8+_textoffset);
+			_titleline1 = new Text("Invasión", _cw, _h/8);
+			_titleline2 = new Text("Zombie", _cw, _h/8+_textoffset);
 
 			g.setFont(new Font("Helvetica", Font.BOLD, 15));
 			_cbs.add(new ControlButton("Iniciar!", _cw, 5*_h/7, g));
@@ -306,10 +306,10 @@ public class Console2 {
 			this.y = y;
 			_back = new RoundRectangle2D.Float(x,y,_width,_width + 35, 5, 5);
 			g.setFont(new Font("Helvetica", Font.BOLD, 15));
-			_text1 = new Text("Upgrades cost 200", rightline, y + 50);
-			_text2 = new Text("resources each", rightline, y + 70);
-			_halfdelay = new ControlButton("Halve Delay", rightline,  y + 100, g);
-			_doubledamage = new ControlButton("Double Damage", rightline,  y + 130, g);
+			_text1 = new Text("Las actualizaciones cuestan 200", rightline, y + 50);
+			_text2 = new Text("cada una", rightline, y + 70);
+			_halfdelay = new ControlButton("Halve D", rightline,  y + 100, g);
+			_doubledamage = new ControlButton("Double D", rightline,  y + 130, g);
 			_cbs.add(_halfdelay);
 			_cbs.add(_doubledamage);
 
@@ -420,17 +420,17 @@ public class Console2 {
 	
 	private void getRound() {
 		int i = _ref.getRound();
-		_round = new Text("Round: " + i, _cw, _h/7 + 2*_textoffset);
+		_round = new Text("Partida: " + i, _cw, _h/7 + 2*_textoffset);
 	}
 	
 	private void getBaseHealth() {
 		int i = _ref.getBaseHealth();
-		_basehealth = new Text("Base Health: " + i, _cw, _h/7 + 3*_textoffset);
+		_basehealth = new Text("Salud de la Base: " + i, _cw, _h/7 + 3*_textoffset);
 	}
 	
 	private void getResources() {
 		int i = _ref.getResources();
-		_resources = new Text("Resources: " + i, _cw, _h/7 + 4*_textoffset);
+		_resources = new Text("Recursos: " + i, _cw, _h/7 + 4*_textoffset);
 	}
 	
 	private boolean exOutTower(AbstractTower t) {
