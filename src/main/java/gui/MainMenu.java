@@ -83,7 +83,7 @@ public class MainMenu {
 		
 		FontMetrics fm = g.getFontMetrics();
 		int c = fm.getHeight() + 10;
-		new Text("Or choose from one", centerX("Or choose from one", 3*_w/2), _h/5);
+		new Text("O elige de una", centerX("O elige de una", 3*_w/2), _h/5);
 		new Text("of our locations", centerX("of our locations", 3*_w/2), _h/5 + c - 10);
 		
 		g.drawLine((int) (_w/2), (int) (_h/6), (int) (_w/2), (int) (3*_h/5 - 30));
