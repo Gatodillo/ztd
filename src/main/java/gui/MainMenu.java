@@ -79,7 +79,7 @@ public class MainMenu {
 
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Helvetica", Font.BOLD, 15));
-		new Text("Enter an address", centerX("Enter an address", _w/2), _h/5);
+		new Text("Introduce una ubicación", centerX("Introduce una ubicación", _w/2), _h/5);
 		
 		FontMetrics fm = g.getFontMetrics();
 		int c = fm.getHeight() + 10;
