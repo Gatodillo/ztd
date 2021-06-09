@@ -33,7 +33,7 @@ public class LoadingScreen {
 
 	public void draw(Graphics2D g) {
 		java.awt.Color colorholder = g.getColor();
-		g.setColor(new Color(119,136,153));
+		g.setColor(_background);
 		g.fill(new Rectangle2D.Float(0,0,_w,_h));
 		this.g = g;
 		if(_first) {
