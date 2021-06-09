@@ -37,6 +37,7 @@ public class LoadingScreen {
 		g.fill(new Rectangle2D.Float(0,0,_w,_h));
 		this.g = g;
 		if(_first) {
+      g.setColor(Color.WHITE);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
 			_t = new Text("CARGANDO", _w, _h/10);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 20));
