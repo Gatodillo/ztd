@@ -38,9 +38,9 @@ public class LoadingScreen {
 		this.g = g;
 		if(_first) {
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("LOADING", _w, _h/10);
+			_t = new Text("CARGANDO", _w, _h/10);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 20));
-			_m = new Text("Looking up address", _w, _h/5);
+			_m = new Text("Buscando la ubicación", _w, _h/5);
 		}
 
 		g.setColor(Color.BLACK);

@@ -60,6 +60,7 @@ public class Map {
 		wMin = new double[2];
 		wMax = new double[2];
 
+    System.out.println("Address: " + address);
     XmlParser x = new XmlParser(this);
     try (InputStream box = getBoxInputStream(address, x)){
 			if ((box == null) && (!_sentDataError)) {
