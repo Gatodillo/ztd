@@ -36,7 +36,7 @@ import cs195n.Vec2i;
 
 public class TestFrontEnd extends SwingFrontEnd {
 	
-	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(1920, 1080);
+	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(1080, 1080);
 	
 	private List<Line2D> _highline2D;
 	private List<Line2D> _zombieline2D;
@@ -538,7 +538,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 			}
 			return true;
 		}
-		else if (_command.equals("Start")) {
+		else if (_command.equals("Iniciar!")) {
 			_ref.startRound();
 			_c.unhighlightTb();
 			_c.noUpgrades();
@@ -569,7 +569,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 			_candidate = null;
 			return true;
 		}
-		else if (_command.equals("Pause")) {
+		else if (_command.equals("Pausa")) {
 			_screen = new Screen("Pause", _size.x, _size.y, _ref);
 			_hasMap = false;
 			_showMap = true;
@@ -705,7 +705,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 		_placedTower = null;
 		if(newSize.x - Constants.MIN_CONSOLE_WIDTH > newSize.y) {
 			_mapSize = newSize.y;
-			_consoleWidth = newSize.x - newSize.y;
+			_consoleWidth = 180;//newSize.x - newSize.y;
 			_c = new Console2(0,0,_consoleWidth,_size.y, _tf, _ref);
 			_border = null;
 		}
