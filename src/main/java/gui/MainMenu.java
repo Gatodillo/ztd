@@ -29,7 +29,7 @@ public class MainMenu {
 	private ControlButton _go;
 	private int _etbwidth = 25;
 	private boolean _first;
-	private final Color _background = new Color(0,241,189);
+	private final Color _background = new Color(119,136,153);
 	
 	public MainMenu(int w, int h, String line1, String line2, int toggle) {
 		_w = w;
@@ -55,7 +55,7 @@ public class MainMenu {
 			_cbs.add(new ControlButton("Eiffel Tower", 3*_w/2, _h/5 + 5*c, g));
 			_cbs.add(new ControlButton("San Francisco", 3*_w/2, _h/5 + 6*c, g));
 			_cbs.add(new ControlButton("Philadelphia Museum of Art", 3*_w/2, _h/5 + 7*c, g));
-      _cbs.add(new ControlButton("Tepic MIC", 3*_w/2, _h/5 + 8*c, g));
+			_cbs.add(new ControlButton("London", 3*_w/2, _h/5 + 8*c, g));
 			_cbs.add(new ControlButton("Amsterdam", 3*_w/2, _h/5 + 9*c, g));
 			_first = false;
 		}

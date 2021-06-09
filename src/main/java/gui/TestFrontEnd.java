@@ -36,7 +36,7 @@ import cs195n.Vec2i;
 
 public class TestFrontEnd extends SwingFrontEnd {
 	
-	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(1920, 1080);
+	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(980, 800);
 	
 	private List<Line2D> _highline2D;
 	private List<Line2D> _zombieline2D;
@@ -76,7 +76,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 		
 		_tf = new TowerFactory();
 
-		_mm = new MainMenu(size.x, size.y, "x", "z", 0);
+		_mm = new MainMenu(size.x, size.y, "", "", 0);
 		_hasMain = true;
 		_showMain = true;
 		_hasMap = false;
@@ -350,7 +350,6 @@ public class TestFrontEnd extends SwingFrontEnd {
 	public void makeMap(String add) {
 		_ref = new Referee(_m, this);
 		_m = new Map(add, _ref, this);
-    System.out.println(_m);
 		if (!_hasDataError) {
 			if (_m.getBaseNode() == null) {
 				dataError(2);
@@ -438,7 +437,6 @@ public class TestFrontEnd extends SwingFrontEnd {
 		if(!_loading.get()) {
 			if (_hasMain) {
 				String add = _mm.contains(e.getX(), e.getY(), true);
-        System.out.println(add);
 				if (add != null) {
 					_loading.set(true);
 					_lScreen = new LoadingScreen(_size.x, _size.y, _ref);
@@ -570,8 +568,8 @@ public class TestFrontEnd extends SwingFrontEnd {
 			_candidate = null;
 			return true;
 		}
-		else if (_command.equals("Pausa")) {
-			_screen = new Screen("Pausa", _size.x, _size.y, _ref);
+		else if (_command.equals("Pause")) {
+			_screen = new Screen("Pause", _size.x, _size.y, _ref);
 			_hasMap = false;
 			_showMap = true;
 			_hasScreen = true;
@@ -730,7 +728,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 	}
 	
 	public static void main(String[] args) {
-		new TestFrontEnd("Invasión zombie!", false, new Vec2i(DEFAULT_WINDOW_SIZE.x, DEFAULT_WINDOW_SIZE.y));
+		new TestFrontEnd("ZTD", false, new Vec2i(DEFAULT_WINDOW_SIZE.x, DEFAULT_WINDOW_SIZE.y));
 	}
 	
 	

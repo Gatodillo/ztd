@@ -79,8 +79,8 @@ public class Console2 {
 			_titleline2 = new Text("Tower Defense", _cw, _h/8+_textoffset);
 
 			g.setFont(new Font("Helvetica", Font.BOLD, 15));
-			_cbs.add(new ControlButton("Iniciar    !", _cw, 5*_h/7, g));
-			_cbs.add(new ControlButton("Pausa", _cw, 5*_h/7 + _cboffset, g));
+			_cbs.add(new ControlButton("Start Round!", _cw, 5*_h/7, g));
+			_cbs.add(new ControlButton("Pause", _cw, 5*_h/7 + _cboffset, g));
 			_cbs.add(new ControlButton("Main Menu", _cw, 5*_h/7 + 2*_cboffset, g));
 			_cbs.add(new ControlButton("Restart", _cw,  5*_h/7 + 3*_cboffset, g));
 			_cbs.add(new ControlButton("Quit", _cw,  5*_h/7 + 4*_cboffset, g));
