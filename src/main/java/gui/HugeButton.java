@@ -24,7 +24,7 @@ public class HugeButton {
 		_highlight = false;
 	}
 	public void draw(Graphics2D g, Color background) {
-		g.setColor(Color.BLACK);
+		g.setColor(Color.MAGENTA);
 		g.setFont(new Font("Helvetica", Font.BOLD, 30));
 		FontMetrics fm = g.getFontMetrics();
 		_bb = fm.getStringBounds(_name, g);
@@ -33,10 +33,10 @@ public class HugeButton {
 		g.fill(_r);
 		if (_highlight) {
 			g.setColor(background.brighter());
-			g.setColor(Color.WHITE);
+			g.setColor(Color.ORANGE);
 			g.fill(_r);
 		}
-		g.setColor(Color.BLACK);
+		g.setColor(Color.WHITE);
 		g.draw(_r);
 		g.drawString(_name, x+5,(int) (y+_bb.getHeight()+1));
 	}

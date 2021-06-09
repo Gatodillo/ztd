@@ -40,10 +40,10 @@ public class Screen {
 		g.fill(new Rectangle2D.Float(0,0,_w,_h));
 		this.g = g;
 		int c = 30;
-		g.setColor(Color.BLACK);
+		g.setColor(Color.MAGENTA);
 		if (_type.equals("Pause")) {
 			if (_first) {
-				g.setColor(Color.WHITE);
+				g.setColor(Color.ORANGE);
 				g.setFont(new Font("Helvetica", Font.PLAIN, 15));
 				_cbs.add(new HugeButton("Continuar", _w, _h/2, g));
 				_first = false;
@@ -166,11 +166,11 @@ public class Screen {
 
 		
 		for (HugeButton cb: _cbs) {
-			cb.draw(g, Color.GRAY);
+			cb.draw(g, Color.MAGENTA);
 		}
 		
-		g.setColor(Color.BLACK);
-		g.setFont(new Font("Helvetica", Font.PLAIN, 70));
+		g.setColor(Color.MAGENTA);
+		g.setFont(new Font("progenisis", Font.PLAIN, 90));
 		_t.draw();
 		
 		g.setColor(colorholder);

@@ -38,16 +38,16 @@ public class LoadingScreen {
 		this.g = g;
 		if(_first) {
       g.setColor(Color.WHITE);
-			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
+			g.setFont(new Font("progenisis", Font.PLAIN, 70));
 			_t = new Text("CARGANDO", _w, _h/10);
-			g.setFont(new Font("Helvetica", Font.PLAIN, 40));
+			g.setFont(new Font("progenisis", Font.PLAIN, 40));
 			_m = new Text("Buscando la ubicación", _w, _h/5);
 		}
 
 		g.setColor(Color.WHITE);
-		g.setFont(new Font("Helvetica", Font.PLAIN, 70));
+		g.setFont(new Font("progenisis", Font.PLAIN, 70));
 		_t.draw();
-		g.setFont(new Font("Helvetica", Font.PLAIN, 40));
+		g.setFont(new Font("progenisis", Font.PLAIN, 40));
 		_m.draw();
 		
 		for(int i=1; i <= _l; i ++) {
