@@ -36,7 +36,7 @@ import cs195n.Vec2i;
 
 public class TestFrontEnd extends SwingFrontEnd {
 	
-	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(980, 800);
+	static final Vec2i DEFAULT_WINDOW_SIZE = new Vec2i(1920, 1080);
 	
 	private List<Line2D> _highline2D;
 	private List<Line2D> _zombieline2D;
@@ -76,7 +76,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 		
 		_tf = new TowerFactory();
 
-		_mm = new MainMenu(size.x, size.y, "", "", 0);
+		_mm = new MainMenu(size.x, size.y, "x", "z", 0);
 		_hasMain = true;
 		_showMain = true;
 		_hasMap = false;
@@ -730,7 +730,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 	}
 	
 	public static void main(String[] args) {
-		new TestFrontEnd("Zombies", false, new Vec2i(DEFAULT_WINDOW_SIZE.x, DEFAULT_WINDOW_SIZE.y));
+		new TestFrontEnd("Invasión zombie!", false, new Vec2i(DEFAULT_WINDOW_SIZE.x, DEFAULT_WINDOW_SIZE.y));
 	}
 	
 	
