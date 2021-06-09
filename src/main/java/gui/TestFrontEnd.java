@@ -64,7 +64,8 @@ public class TestFrontEnd extends SwingFrontEnd {
 	private AtomicBoolean _loading;
 	private LoadingScreen _lScreen;
 	private boolean _doreset = false;
-	
+	private Color zombieHighwaysColor = new Color(0,241,189);
+
 	public TestFrontEnd(String title, boolean fullscreen) {
 		super(title, fullscreen);
 		super.startup();
@@ -254,7 +255,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 		}
 
 		//Zombie highways
-		g.setColor(java.awt.Color.BLUE);
+		g.setColor(zombieHighwaysColor);
 		g.setStroke(new BasicStroke(6*defaultstroke));
 		for (Line2D l: _zombieline2D) {
 			g.draw(l);
