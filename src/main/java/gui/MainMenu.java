@@ -116,10 +116,10 @@ public class MainMenu {
 		new CenText("una ubicación a la derecha para generar un mapa en el cual podrás jugar. El objetivo del juego es prevenir", _w, r + 3*f);
 		new CenText("que los zombies destruyan tu base, añadiendo torres de defensa. Al final de cada partida", _w, r + 4*f);
 		new CenText("recibes el 5% de interés sobre el dinero que no hayas gastado. Tips:", _w, r + 5*f);
-		new Text("La torre básica dispara balas regulares.", s, r + 7*f);
-		new Text("El lanzallamas crea un circulo de flamas.", s, r + 8*f);
-		new Text("El cañon dispara bombas que causan un gran daño al impactar.", s, r + 9*f);
-		new Text("El pegote vuelve más lentos a los zombies.", s, r + 10*f);
+		new Text("La Torre básica dispara balas regulares.", s, r + 7*f);
+		new Text("El Lanzallamas crea un circulo de flamas.", s, r + 8*f);
+		new Text("El Cañon dispara bombas que causan un gran daño al impactar.", s, r + 9*f);
+		new Text("El Pegote vuelve más lentos a los zombies.", s, r + 10*f);
 		new Text("El Alacrán envenena a los zombies que pasan cerca y mueren lentamente.", s, r + 11*f);
 		new Text("El Arco eléctrico proporciona descargas eléctricas que pueden saltar de zombie a zombie.", s, r + 12*f);
 		new Text("El Láser daña a todos los zombies en su camino.", s, r + 13*f);
