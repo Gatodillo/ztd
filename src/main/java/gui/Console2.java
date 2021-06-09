@@ -82,21 +82,21 @@ public class Console2 {
 			_cbs.add(new ControlButton("Iniciar!", _cw, 5*_h/7, g));
 			_cbs.add(new ControlButton("Pausa", _cw, 5*_h/7 + _cboffset, g));
 			_cbs.add(new ControlButton("Menú principal", _cw, 5*_h/7 + 2*_cboffset, g));
-			_cbs.add(new ControlButton("Restart", _cw,  5*_h/7 + 3*_cboffset, g));
-			_cbs.add(new ControlButton("Quit", _cw,  5*_h/7 + 4*_cboffset, g));
+			_cbs.add(new ControlButton("Reiniciar", _cw,  5*_h/7 + 3*_cboffset, g));
+			_cbs.add(new ControlButton("Salir", _cw,  5*_h/7 + 4*_cboffset, g));
 			
 			Vec2f zero = new Vec2f(0,0);
 			int towerspace = 5;
 			float leftstart = centerRect(_tbwidth*4 + towerspace*3, _cw);
-			_tbs.add(new TowerButton("Basic Tower", leftstart, 2*_h/7, _tf.makeBasic(zero, _ref)));
-			_tbs.add(new TowerButton("Flame Tower", leftstart+_tbwidth+towerspace, 2*_h/7, _tf.makeFlame(zero, _ref)));
-			_tbs.add(new TowerButton("Cannon Tower", leftstart+2*_tbwidth+2*towerspace, 2*_h/7, _tf.makeCannon(zero, _ref)));
-			_tbs.add(new TowerButton("Goo Tower", leftstart+3*_tbwidth+3*towerspace, 2*_h/7, _tf.makeGoo(zero, _ref)));
+			_tbs.add(new TowerButton("Torre básica", leftstart, 2*_h/7, _tf.makeBasic(zero, _ref)));
+			_tbs.add(new TowerButton("Lanzallamas", leftstart+_tbwidth+towerspace, 2*_h/7, _tf.makeFlame(zero, _ref)));
+			_tbs.add(new TowerButton("Cañon", leftstart+2*_tbwidth+2*towerspace, 2*_h/7, _tf.makeCannon(zero, _ref)));
+			_tbs.add(new TowerButton("Pegote", leftstart+3*_tbwidth+3*towerspace, 2*_h/7, _tf.makeGoo(zero, _ref)));
 
 			
-			_tbs.add(new TowerButton("Poison Tower", leftstart, 2*_h/7 + _tbwidth + 5, _tf.makePoison(zero, _ref)));
-			_tbs.add(new TowerButton("Electric Tower", leftstart+_tbwidth+towerspace, 2*_h/7 + _tbwidth + 5, _tf.makeElectric(zero, _ref)));
-			_tbs.add(new TowerButton("Laser Tower", leftstart+2*_tbwidth+2*towerspace, 2*_h/7 + _tbwidth + 5, _tf.makeLaser(zero, _ref)));
+			_tbs.add(new TowerButton("Alacrán", leftstart, 2*_h/7 + _tbwidth + 5, _tf.makePoison(zero, _ref)));
+			_tbs.add(new TowerButton("Arco eléctrico", leftstart+_tbwidth+towerspace, 2*_h/7 + _tbwidth + 5, _tf.makeElectric(zero, _ref)));
+			_tbs.add(new TowerButton("Laser", leftstart+2*_tbwidth+2*towerspace, 2*_h/7 + _tbwidth + 5, _tf.makeLaser(zero, _ref)));
 			//_tbs.add(new TowerButton("Stun Tower", _cw*7/4, 2*_h/7 + _tbwidth + 5, _tf.makeStun(zero, _ref)));
 			_first = false;
 		}

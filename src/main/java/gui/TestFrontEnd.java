@@ -558,7 +558,7 @@ public class TestFrontEnd extends SwingFrontEnd {
 			_m = null;
 			return true;
 		}
-		else if (_command.equals("Restart")) {
+		else if (_command.equals("Reiniciar")) {
 			_hasScreen = false;
 			_hasMap = true;
 			_screen = null;
@@ -599,32 +599,32 @@ public class TestFrontEnd extends SwingFrontEnd {
 			_showMain = true;
 			_hasDataError = false;
 		}
-		else if (_command.equals("Quit")) {
+		else if (_command.equals("Salir")) {
 			System.exit(0);
 		}
 		return false;
 	}
 	
 	private AbstractTower parseConsoleTowerButton(MouseEvent e) {
-		if (_command.equals("Basic")) {
+		if (_command.equals("Torre")) {
 			return _tf.makeBasic(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
-		else if (_command.equals("Cannon")) {
+		else if (_command.equals("Cañon")) {
 			return _tf.makeCannon(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
-		else if (_command.equals("Electric")) {
+		else if (_command.equals("Arco")) {
 			return _tf.makeElectric(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
-		else if (_command.equals("Flame")) {
+		else if (_command.equals("Lanzallamas")) {
 			return _tf.makeFlame(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
-		else if (_command.equals("Goo")) {
+		else if (_command.equals("Pegote")) {
 			return _tf.makeGoo(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
 		else if (_command.equals("Laser")) {
 			return _tf.makeLaser(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
-		else if (_command.equals("Poison")) {
+		else if (_command.equals("Alacrán")) {
 			return _tf.makePoison(new Vec2f(xToLon(e.getX()), yToLat(e.getY())), _ref);
 		}
 		else if (_command.equals("Stun")) {
