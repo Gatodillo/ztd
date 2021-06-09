@@ -18,6 +18,7 @@ public class ControlButton {
 	public ControlButton(String name, float rightline, float y, Graphics2D g) {
 		_name = name;
 		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+    g.setColor(Color.MAGENTA);
 		float x = centerX(name, rightline, g);
 		this.x = x;
 		this.y = y;
@@ -36,6 +37,7 @@ public class ControlButton {
 		}
 		g.setColor(Color.BLACK);
 		g.draw(_r);
+    g.setColor(Color.MAGENTA);
 		g.drawString(_name, x+5,(int) (y+_bb.getHeight()+1));
 	}
 	public RoundRectangle2D getRoundRect() {

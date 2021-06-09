@@ -46,10 +46,11 @@ public class MainMenu {
 		this.g = g;
 		if (_first) {
 			int c = 30;
-			_go = new ControlButton("JUGAR", _w/2, _h/5 + 3*c, g);
+      Graphics2D gTemp = g;
+			_go = new ControlButton("JUGAR", _w/2, _h/5 + 3*c, g);      
 			_addline1 = new EditableTextBox(_etbwidth, _w/2, _h/5 + c, _line1);
 			_addline2 = new EditableTextBox(_etbwidth, _w/2, _h/5 + 2*c, _line2);
-			_cbs.add(new ControlButton("Brown University", 3*_w/2, _h/5 + 2*c, g));
+			_cbs.add(new ControlButton("Universidad Brown", 3*_w/2, _h/5 + 2*c, g));
 			_cbs.add(new ControlButton("Wall Street", 3*_w/2, _h/5 + 3*c, g));
 			_cbs.add(new ControlButton("White House", 3*_w/2, _h/5 + 4*c, g));
 			_cbs.add(new ControlButton("Eiffel Tower", 3*_w/2, _h/5 + 5*c, g));
@@ -88,7 +89,7 @@ public class MainMenu {
 		
 		g.drawLine((int) (_w/2), (int) (_h/6), (int) (_w/2), (int) (3*_h/5 - 30));
 		
-		g.setColor(Color.BLACK);
+		g.setColor(Color.DARK_GRAY);
 		g.setFont(new Font("Helvetica", Font.BOLD, 15));
 		_addline1.draw();
 		_addline2.draw();
@@ -104,7 +105,7 @@ public class MainMenu {
 		int r = 3*_h/5 + 10;
 		g.setColor(_background);
 		g.fillRect(0, 3*_h/5 + 10, _w, _h);
-		g.setColor(Color.BLACK);
+		g.setColor(Color.DARK_GRAY);
 		g.drawLine(0, 3*_h/5 + 10, _w, 3*_h/5 + 10);
 		int f = 16;
 		int s = 30;
