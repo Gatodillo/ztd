@@ -41,19 +41,19 @@ public class Screen {
 		this.g = g;
 		int c = 30;
 		g.setColor(Color.BLACK);
-		if (_type.equals("Pause")) {
+		if (_type.equals("Pausa")) {
 			if (_first) {
-				g.setColor(Color.BLACK);
+				g.setColor(Color.WHITE);
 				g.setFont(new Font("Helvetica", Font.PLAIN, 15));
-				_cbs.add(new HugeButton("Continue", _w, _h/2, g));
+				_cbs.add(new HugeButton("Continuar", _w, _h/2, g));
 				_first = false;
 			}
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("PAUSE", _w, _h/5);
+			_t = new Text("PAUSA", _w, _h/5);
 		}
 		else if (_type.equals("Loading")) {
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
-			_t = new Text("LOADING...", _w, _h/5);
+			_t = new Text("CARGANDO...", _w, _h/5);
 		}
 		else if (_type.equals("Game Over")) {
 			if (_first) {
