@@ -467,12 +467,13 @@ public class Map {
 			addr.equalsIgnoreCase("White House") ||
 			addr.equalsIgnoreCase("Eiffel Tower") ||
 			addr.equalsIgnoreCase("San Francisco") ||
-			addr.equalsIgnoreCase("Philadelphia Museum of Art") ||
+			addr.equalsIgnoreCase("Tepic MIC") ||
 			addr.equalsIgnoreCase("London") ||
 			addr.equalsIgnoreCase("Amsterdam");
 	}
 	
 	public void setW(String word1) {
+    System.out.println("Word1: " + word1);
 		if (word1.equals("Brown University")) {
 			setWBrown();
 		}
@@ -488,8 +489,8 @@ public class Map {
 		if (word1.equals("San Francisco")) {
 			setWSan();
 		}
-		if (word1.equals("Philadelphia Museum of Art")) {
-			setWPhiladelphia();
+		if (word1.equals("Tepic MIC")) {
+			setWTepicMIC();
 		}
 		if (word1.equals("London")) {
 			setWLondon();
@@ -534,11 +535,11 @@ public class Map {
 		wMax[1] = 37.781658064817755;
 	}
 	
-	public void setWPhiladelphia() {
-		wMin[0] = -75.18503682899697;
-		wMin[1] = 39.96286273518224;
-		wMax[0] = -75.17799649274744;
-		wMax[1] = 39.96825866481775;
+	public void setWTepicMIC() {
+		wMin[0] = -104.85176;
+		wMin[1] = 21.47717;
+		wMax[0] = -104.84522;
+		wMax[1] = 21.48587;
 	}
 	
 	public void setWLondon() {
