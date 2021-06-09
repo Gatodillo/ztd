@@ -40,14 +40,14 @@ public class LoadingScreen {
       g.setColor(Color.WHITE);
 			g.setFont(new Font("Helvetica", Font.PLAIN, 70));
 			_t = new Text("CARGANDO", _w, _h/10);
-			g.setFont(new Font("Helvetica", Font.PLAIN, 20));
+			g.setFont(new Font("Helvetica", Font.PLAIN, 40));
 			_m = new Text("Buscando la ubicación", _w, _h/5);
 		}
 
-		g.setColor(Color.BLACK);
+		g.setColor(Color.WHITE);
 		g.setFont(new Font("Helvetica", Font.PLAIN, 70));
 		_t.draw();
-		g.setFont(new Font("Helvetica", Font.PLAIN, 20));
+		g.setFont(new Font("Helvetica", Font.PLAIN, 40));
 		_m.draw();
 		
 		for(int i=1; i <= _l; i ++) {
