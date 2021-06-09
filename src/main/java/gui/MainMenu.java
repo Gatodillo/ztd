@@ -75,7 +75,7 @@ public class MainMenu {
 		
 		g.setColor(Color.WHITE);
 		g.setFont(new Font("Helvetica", Font.BOLD, 30));
-		new Text("Zombie Tower Defense", centerX("Zombie Tower Defense", _w), _h/10);
+		new Text("Invasión zombie!", centerX("Invasión zombie!", _w), _h/10);
 
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Helvetica", Font.BOLD, 15));
