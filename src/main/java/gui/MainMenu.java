@@ -74,23 +74,25 @@ public class MainMenu {
 		g.setColor(_background);
 		g.fill(new Rectangle2D.Float(0,0,_w,_h));
 		
-		g.setColor(Color.WHITE);
-		g.setFont(new Font("Helvetica", Font.BOLD, 30));
+		g.setColor(new Color(150, 124, 157));
+		g.setFont(new Font("Wargames", Font.BOLD, 90));
 		new Text("Invasión zombie!", centerX("Invasión zombie!", _w), _h/10);
 
-		g.setColor(Color.BLACK);
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setColor(new Color(107, 104, 103));
+		g.setFont(new Font("progenisis", Font.BOLD, 45));
 		new Text("Introduce una ubicación", centerX("Introduce una ubicación", _w/2), _h/5);
 		
 		FontMetrics fm = g.getFontMetrics();
 		int c = fm.getHeight() + 10;
-		new Text("O elige de una", centerX("O elige de una", 3*_w/2), _h/5);
+		new Text("O elige de una", centerX("O elige una", 3*_w/2), _h/5);
 		new Text("de nuestras ubicaciones", centerX("de nuestras ubicaciones", 3*_w/2), _h/5 + c - 10);
 		
 		g.drawLine((int) (_w/2), (int) (_h/6), (int) (_w/2), (int) (3*_h/5 - 30));
 		
 		g.setColor(Color.DARK_GRAY);
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setFont(new Font("Uroob", Font.PLAIN, 15));
+
+    g.setColor(new Color(206, 40, 3));
 		_addline1.draw();
 		_addline2.draw();
 		
@@ -109,7 +111,7 @@ public class MainMenu {
 		g.drawLine(0, 3*_h/5 + 10, _w, 3*_h/5 + 10);
 		int f = 16;
 		int s = 30;
-		g.setFont(new Font("Helvetica", Font.BOLD, 13));
+		g.setFont(new Font("Helvetica", Font.BOLD, 15));
 		g.setColor(Color.DARK_GRAY);
 		new CenText("Tutorial", _w, r + f);
 		new CenText("Invasión Zombie es un juego de defensa basado en mapas del mundo real. Puedes escribir una dirección o seleccionar", _w, r + 2*f);
@@ -156,7 +158,7 @@ public class MainMenu {
 			for (int i = 0; i < textwidth; i++) {
 				_widthholder = _widthholder + "d";
 			}
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("progenisis", Font.BOLD, 15));
 			float x = centerX(_widthholder, rightline);
 			this.x = x;
 			this.y = y;
@@ -165,12 +167,12 @@ public class MainMenu {
 			_r = null;
 		}
 		public void draw() {
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("progenisis", Font.BOLD, 15));
 			FontMetrics fm = g.getFontMetrics();
 			_bb = fm.getStringBounds(_widthholder, g);
 			_r = new RoundRectangle2D.Float(x,y,(float) (_bb.getWidth()+10), (float) (_bb.getHeight()+5), 10, 10);
 			g.setColor(Color.BLACK);
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("progenisis", Font.BOLD, 15));
 			g.draw(_r);
 			_disptext = _text;
 			if ((blink > 50) && (blink < 100) && (_selected)) {

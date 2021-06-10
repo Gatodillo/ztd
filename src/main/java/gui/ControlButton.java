@@ -17,7 +17,7 @@ public class ControlButton {
 	private boolean _highlight;
 	public ControlButton(String name, float rightline, float y, Graphics2D g) {
 		_name = name;
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setFont(new Font("Wargames", Font.BOLD, 15));
     g.setColor(Color.MAGENTA);
 		float x = centerX(name, rightline, g);
 		this.x = x;
@@ -26,7 +26,7 @@ public class ControlButton {
 	}
 	public void draw(Graphics2D g, Color background) {
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setFont(new Font("Wargames", Font.PLAIN, 15));
 		FontMetrics fm = g.getFontMetrics();
 		_bb = fm.getStringBounds(_name, g);
 		_r = new RoundRectangle2D.Float(x,y,(float) (_bb.getWidth()+10), (float) (_bb.getHeight()+5), 10, 10);
@@ -37,6 +37,7 @@ public class ControlButton {
 		}
 		g.setColor(Color.BLACK);
 		g.draw(_r);
+    g.setFont(new Font("Wargames", Font.PLAIN, 15));
     g.setColor(Color.MAGENTA);
 		g.drawString(_name, x+5,(int) (y+_bb.getHeight()+1));
 	}

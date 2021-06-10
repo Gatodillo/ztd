@@ -74,11 +74,11 @@ public class Console2 {
 			_textoffset = 20;
 			_cboffset = 30;
 			g.setColor(Color.WHITE);
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			_titleline1 = new Text("Invasión", _cw, _h/8);
 			_titleline2 = new Text("Zombie", _cw, _h/8+_textoffset);
 
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			_cbs.add(new ControlButton("Iniciar!", _cw, 5*_h/7, g));
 			_cbs.add(new ControlButton("Pausa", _cw, 5*_h/7 + _cboffset, g));
 			_cbs.add(new ControlButton("Menú principal", _cw, 5*_h/7 + 2*_cboffset, g));
@@ -108,7 +108,7 @@ public class Console2 {
 		g.fill(new Rectangle2D.Float(_x,_y,_cw,_h));
 		
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setFont(new Font("Wargames", Font.PLAIN, 15));
 		_titleline1.draw();
 		_titleline2.draw();
 		g.setColor(java.awt.Color.BLACK);
@@ -123,13 +123,13 @@ public class Console2 {
 
 		
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setFont(new Font("Wargames", Font.PLAIN, 15));
 		for (ControlButton cb: _cbs) {
 			cb.draw(g, _background);
 		}
 		
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Helvetica", Font.BOLD, 15));
+		g.setFont(new Font("Wargames", Font.PLAIN, 15));
 		for (TowerButton tb: _tbs) {
 			tb.draw();
 		}
@@ -179,7 +179,7 @@ public class Console2 {
 			g.draw(_r);
 			String first = _name.substring(0, 1);
 			first.toUpperCase();
-			g.setFont(new Font("Helvetica", Font.BOLD, 20));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			g.drawString(first, x+_tbwidth/4 +2, y + 25);
 			g.setColor(Color.RED);
 			g.setStroke(new BasicStroke(3));
@@ -237,7 +237,7 @@ public class Console2 {
 			g.draw(_back);
 			g.setColor(Color.BLACK);
 			int c = 20;
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			g.drawString(_name, centerX(_name, _rightline), y + c);
 			g.drawString("Precio: " + _t.getPrice(), x + 2, y + 2*c);
 			g.drawString("Daño: " + _t.getDamage(), x + 2, y + 3*c);
@@ -305,7 +305,7 @@ public class Console2 {
 			this.x = centerRect(_width, rightline);
 			this.y = y;
 			_back = new RoundRectangle2D.Float(x,y,_width,_width + 35, 5, 5);
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			_text1 = new Text("Las actualizaciones cuestan 200", rightline, y + 50);
 			_text2 = new Text("cada una", rightline, y + 70);
 			_halfdelay = new ControlButton("Halve D", rightline,  y + 100, g);
@@ -318,10 +318,10 @@ public class Console2 {
 			g.setColor(Color.ORANGE);
 			g.draw(_back);
 			g.setColor(Color.BLACK);
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			_text1.draw();
 			_text2.draw();
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			_halfdelay.draw(g, _background);
 			_doubledamage.draw(g, _background);
 			g.setColor(new Color(1f, 0f, 0f, .5f));
@@ -362,7 +362,7 @@ public class Console2 {
 		private float x;
 		private float y;
 		public Text(String name, float rightline, float y) {
-			g.setFont(new Font("Helvetica", Font.BOLD, 15));
+			g.setFont(new Font("Wargames", Font.PLAIN, 15));
 			this.x = centerX(name, rightline);
 			this.y = y;
 			_name = name;
